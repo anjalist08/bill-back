@@ -22,11 +22,21 @@
 
 ## One-pager: the team
 
-[Fill in: names, roles, school, relevant experience, prior projects or startups, and why this team.]
+**Anjali Sharma-Tiwari, solo founder.** Student at Stanford University. Product, engineering, design and pitch.
+
+- **Background:** [from LinkedIn: program/major and year]
+- **Relevant experience:** [from LinkedIn: 1-2 lines, e.g. AI/ML, healthcare, fintech or product roles]
+- **Prior projects:** [from LinkedIn: one project or startup, with link]
+
+**Why I am building this.** A medical bill is the only bill most people pay without understanding a single line of it. It arrives weeks after the care, lists codes nobody outside the industry can read, and a total that is often wrong: duplicate charges, upcoded visits, unbundled supplies, denials that would be overturned on appeal. Hospitals and insurers have billing departments and software on their side. The patient has a phone and a deadline. Most people pay, because checking feels impossible and disputing feels confrontational.
+
+*An illustrative example (a composite, not a real patient):* a student goes to the ER for chest pain, gets a $3,867 bill, and pays it in installments. Nobody notices that the chest X-ray was billed twice and that the printed total is $300 more than the line items add up to. That is $620 gone, and finding it takes a trained eye and an afternoon most people do not have. BillBack finds it in about 60 seconds and writes the letter.
+
+**Why me, why now.** Multimodal models like Gemini can finally read a crumpled photo of a bill as well as a billing specialist, return structured data, and draft a clear, polite dispute. As a solo builder I shipped the full product in a day: upload, extraction, analysis, deterministic math checks, appeal letters and a live deployment. I want to turn it into the patient's side of the billing department, paid only when it saves people money.
 
 ## 2-minute video (team intro and pitch)
 
-1. (0:00-0:20) Who we are, in one line each. [fill in]
+1. (0:00-0:20) "I'm Anjali, a Stanford student and BillBack's solo founder. I built BillBack because the people who receive medical bills have the least help reading them."
 2. (0:20-0:50) The problem: a real story of a confusing bill. Hook: "Most hospital bills have mistakes. Nobody checks."
 3. (0:50-1:25) The solution and a 20-second clip of the product.
 4. (1:25-1:50) Business model and market: success fee, employer channel.
@@ -45,7 +55,7 @@ Post the demo publicly on YouTube **as early as possible**; engagement counts to
 ## Final checklist
 
 - [ ] Track selected: Google AI Studio
-- [ ] Team one-pager filled in
+- [ ] Team one-pager filled in (add LinkedIn details in the three bracketed slots)
 - [x] Idea one-pager (above) reviewed; hosting line filled in
 - [ ] Public prototype URL tested from a phone: https://billback-bs6g.onrender.com (tested on desktop with 3 fictional samples; open it a minute before demoing, the free tier sleeps when idle)
 - [ ] Public GitHub repo link: https://github.com/anjalist08/bill-back
