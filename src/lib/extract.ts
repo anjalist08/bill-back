@@ -11,20 +11,22 @@ const PROMPT = `Read the attached document and return JSON with exactly this sha
   "patientName": string | null,
   "providerName": string | null,
   "accountNumber": string | null,
+  "payerName": string | null,   // insurance company / health plan, if shown
+  "claimNumber": string | null,
   "totalBilled": number,
   "lineItems": [
     { "code": string | null, "description": string, "amount": number, "date": string | null, "provider": string | null }
   ],
-  "denialReason": string | null
+  "denialReason": string | null,
+  "notes": string | null   // other facts stated in the document: appeal deadlines, dates a prior-auth was submitted, etc. Quote, do not infer.
 }
 List every charge as its own line item, in the order shown. "code" is a CPT/HCPCS/revenue code if present.
 "totalBilled" is the total amount billed on the document; if it is not printed, sum the line items.`;
 
 export async function extractDocument(file: InlineFile): Promise<Extraction> {
-  return callGeminiJson({
-    system: SYSTEM,
-    prompt: PROMPT,
-    schema: ExtractionSchema,
-    file,
-  });
+  const out = await callGeminiJson({ system: SYSTEM, prompt: PROMPT, schema: ExtractionSchema, file });
+  // Placeholder codes are not real codes; never present them as such.
+  const PLACEHOLDER = /^(n\/?a|none|null|unknown|-*)$/i;
+  const clean = (c?: string | null) => (c && !PLACEHOLDER.test(c.trim()) ? c.trim() : null);
+  return { ...out, lineItems: out.lineItems.map((i) => ({ ...i, code: clean(i.code) })) };
 }
