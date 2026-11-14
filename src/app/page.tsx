@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { LetterPanel } from "@/components/LetterPanel";
 import { Results } from "@/components/Results";
 import { Uploader } from "@/components/Uploader";
 import { SAMPLE_RESULT } from "@/lib/sample";
@@ -51,6 +52,7 @@ export default function Home() {
         <>
           {state.isSample && <p className="muted">This is a fictional sample bill.</p>}
           <Results result={state.result} />
+          <LetterPanel result={state.result} />
         </>
       )}
 
