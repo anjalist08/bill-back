@@ -46,6 +46,7 @@ Rules: only reference codes and amounts that appear in the list above; never inv
 Order issues from highest to lowest potential savings. If you find nothing, return an empty issues array and estimatedSavings 0.`;
 }
 
+const usd = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD" });
 const round2 = (n: number) => Math.round(n * 100) / 100;
 const sumItems = (e: Extraction) => e.lineItems.reduce((s, i) => s + i.amount, 0);
 
@@ -74,7 +75,7 @@ export function postProcess(extraction: Extraction, analysis: Analysis): Analysi
       title: over ? "Printed total is higher than the line items" : "Printed total is lower than the line items",
       severity: over ? "high" : "low",
       lineItemRefs: [],
-      explanation: `The document shows a total of $${extraction.totalBilled.toFixed(2)}, but the listed charges add up to $${round2(sumItems(extraction)).toFixed(2)}, a difference of $${Math.abs(diff).toFixed(2)}. This may be a math error or an unlisted charge.`,
+      explanation: `The document shows a total of ${usd(extraction.totalBilled)}, but the listed charges add up to ${usd(sumItems(extraction))}, a difference of ${usd(Math.abs(diff))}. This may be a math error or an unlisted charge.`,
       estimatedSavings: over ? diff : 0,
       confidence: 0.9,
       suggestedAction: "Ask the billing office for a fully itemized statement that explains the difference.",
