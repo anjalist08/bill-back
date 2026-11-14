@@ -13,9 +13,12 @@ export const ExtractionSchema = z.object({
   patientName: z.string().nullish(),
   providerName: z.string().nullish(),
   accountNumber: z.string().nullish(),
+  payerName: z.string().nullish(),
+  claimNumber: z.string().nullish(),
   totalBilled: z.number(),
   lineItems: z.array(LineItemSchema),
   denialReason: z.string().nullish(),
+  notes: z.string().nullish(),
 });
 
 export const IssueSchema = z.object({
