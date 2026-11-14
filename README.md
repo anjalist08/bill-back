@@ -2,6 +2,10 @@
 
 **Live demo:** https://billback-bs6g.onrender.com
 
+**Pitch video (2 min):** https://youtu.be/c704E9NkUzs
+
+**Demo video (1 min):** https://youtu.be/NHoT_VOtxrQ
+
 Upload a medical bill or insurance denial. Gemini finds likely errors, estimates your savings, and drafts the dispute letter.
 
 Built for the Berkeley x Google DeepMind hackathon (Google AI Studio track).
