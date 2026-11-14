@@ -51,7 +51,7 @@ Next.js Route Handler  /api/letter   --(Gemini API)--> Gemini
 ```
 
 - **Framework:** Next.js (App Router) + TypeScript, `output: "standalone"` for a small container.
-- **AI:** `@google/genai` SDK. Model is configurable via `GEMINI_MODEL` (default `gemini-2.5-flash`).
+- **AI:** `@google/genai` SDK. Model is configurable via `GEMINI_MODEL` (default `gemini-flash-lite-latest`).
   - **Call 1 (extract):** multimodal input -> JSON line items via `responseSchema`.
   - **Call 2 (analyze):** line items -> issues, savings estimate, confidence.
   - **Call 3 (letter):** analysis + user details -> letter text.
