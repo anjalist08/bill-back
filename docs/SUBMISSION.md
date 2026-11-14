@@ -1,6 +1,7 @@
 # Hackathon Submission Kit
 
 **Track:** Google AI Studio
+**Live demo:** https://billback-7nn9.onrender.com
 **Deadline:** 10:30 AM PT, Nov 14 (hard stop)
 
 ## One-pager: the idea
@@ -11,7 +12,7 @@
 
 **Solution.** Upload a photo or PDF. Gemini reads the document (multimodal), extracts every line item, flags potential issues with plain-English explanations, confidence scores and estimated savings, then drafts a polite, specific dispute letter. A shareable savings card helps the result spread.
 
-**Built with Google tools.** Gemini API (multimodal document understanding, structured JSON output, text generation) via the `@google/genai` SDK, Google AI Studio for the API key and prompt iteration, [hosting: Vercel or Cloud Run, fill in].
+**Built with Google tools.** Gemini API (multimodal document understanding, structured JSON output, text generation) via the `@google/genai` SDK, Google AI Studio for the API key and prompt iteration, and Render (free tier) for hosting.
 
 **Business model.** Free analysis; success fee (a percentage of savings recovered) or per-letter fee. Channels: employer benefits platforms, patient advocates, insurers' member apps.
 
@@ -45,8 +46,8 @@ Post the demo publicly on YouTube **as early as possible**; engagement counts to
 
 - [ ] Track selected: Google AI Studio
 - [ ] Team one-pager filled in
-- [ ] Idea one-pager (above) reviewed; hosting line filled in
-- [ ] Public prototype URL tested from a phone
+- [x] Idea one-pager (above) reviewed; hosting line filled in
+- [ ] Public prototype URL tested from a phone: https://billback-7nn9.onrender.com (tested on desktop with 3 fictional samples; open it a minute before demoing, the free tier sleeps when idle)
 - [ ] Public GitHub repo link: https://github.com/anjalist08/bill-back
 - [ ] 2-minute video uploaded
 - [ ] 1-minute demo video public on YouTube
