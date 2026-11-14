@@ -1,0 +1,13 @@
+# Render Blueprint: deploys BillBack as a free Docker web service.
+# Secrets are never stored here; set GEMINI_API_KEY in the Render dashboard.
+services:
+  - type: web
+    name: billback
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-flash-lite-latest
