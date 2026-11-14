@@ -55,3 +55,16 @@ export async function callGeminiJson<T>(opts: JsonCallOptions<T>): Promise<T> {
   }
   throw new Error(`Gemini returned invalid JSON: ${String(lastError)}`);
 }
+
+/** Plain-text Gemini call (used for the dispute letter). */
+export async function callGeminiText(system: string, prompt: string): Promise<string> {
+  const model = process.env.GEMINI_MODEL || DEFAULT_MODEL;
+  const res = await getClient().models.generateContent({
+    model,
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    config: { systemInstruction: system, temperature: 0.4 },
+  });
+  const text = (res.text ?? "").trim();
+  if (!text) throw new Error("Gemini returned an empty letter");
+  return text;
+}
