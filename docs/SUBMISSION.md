@@ -1,7 +1,7 @@
 # Hackathon Submission Kit
 
 **Track:** Google AI Studio
-**Live demo:** https://billback-za9r.onrender.com
+**Live demo:** https://billback-bs6g.onrender.com
 **Deadline:** 10:30 AM PT, Nov 14 (hard stop)
 
 ## One-pager: the idea
@@ -47,7 +47,7 @@ Post the demo publicly on YouTube **as early as possible**; engagement counts to
 - [ ] Track selected: Google AI Studio
 - [ ] Team one-pager filled in
 - [x] Idea one-pager (above) reviewed; hosting line filled in
-- [ ] Public prototype URL tested from a phone: https://billback-za9r.onrender.com (tested on desktop with 3 fictional samples; open it a minute before demoing, the free tier sleeps when idle)
+- [ ] Public prototype URL tested from a phone: https://billback-bs6g.onrender.com (tested on desktop with 3 fictional samples; open it a minute before demoing, the free tier sleeps when idle)
 - [ ] Public GitHub repo link: https://github.com/anjalist08/bill-back
 - [ ] 2-minute video uploaded
 - [ ] 1-minute demo video public on YouTube
