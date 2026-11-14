@@ -24,9 +24,10 @@
 
 **Anjali Sharma-Tiwari, solo founder.** Student at Stanford University. Product, engineering, design and pitch.
 
-- **Background:** [from LinkedIn: program/major and year]
-- **Relevant experience:** [from LinkedIn: 1-2 lines, e.g. AI/ML, healthcare, fintech or product roles]
-- **Prior projects:** [from LinkedIn: one project or startup, with link]
+- **Background:** B.S. in EECS + Math at Stanford. Focus on deep learning, sensor processing, computer vision and GenAI pipelines. [LinkedIn](https://www.linkedin.com/in/anjalist)
+- **Relevant experience:** Research Fellow, Texas Tech ECE Lab: deep learning on FMCW radar spectrograms for real-time classification, published in IEEE WiSNet 2026. Software Engineer at DynaRyde: built an on-demand microtransit routing engine (Python, DBSCAN, SUMO) that cut passenger wait times by up to 35%.
+- **Prior projects:** Autonomous tracking and localization stack on an NVIDIA Jetson Nano (VEX Robotics); real-time OpenCV vision pipeline for an autonomous RACECAR (MIT Beaver Works Summer Institute).
+- **Why this background fits:** BillBack is the same skill set pointed at a new signal: turning messy, noisy real-world input (radar returns, camera frames, now crumpled bill photos) into structured data a model can reason about, then into a decision a person can act on.
 
 **Why I am building this.** A medical bill is the only bill most people pay without understanding a single line of it. It arrives weeks after the care, lists codes nobody outside the industry can read, and a total that is often wrong: duplicate charges, upcoded visits, unbundled supplies, denials that would be overturned on appeal. Hospitals and insurers have billing departments and software on their side. The patient has a phone and a deadline. Most people pay, because checking feels impossible and disputing feels confrontational.
 
@@ -55,7 +56,7 @@ Post the demo publicly on YouTube **as early as possible**; engagement counts to
 ## Final checklist
 
 - [ ] Track selected: Google AI Studio
-- [ ] Team one-pager filled in (add LinkedIn details in the three bracketed slots)
+- [x] Team one-pager filled in
 - [x] Idea one-pager (above) reviewed; hosting line filled in
 - [ ] Public prototype URL tested from a phone: https://billback-bs6g.onrender.com (tested on desktop with 3 fictional samples; open it a minute before demoing, the free tier sleeps when idle)
 - [ ] Public GitHub repo link: https://github.com/anjalist08/bill-back
