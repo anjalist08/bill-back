@@ -80,10 +80,14 @@ https://billback-bs6g.onrender.com
 Open it about a minute before judging. The free tier sleeps when idle and takes about 50 seconds to wake.
 
 ## YouTube Video URL: 2-Minute Video (team intro and pitch)
-**YOU:** upload `submission/bill-back-pitch.mp4` to YouTube as **Public** and paste the link.
+```
+https://youtu.be/c704E9NkUzs
+```
 
 ## YouTube Video URL: 1-Minute Video (prototype walkthrough)
-**YOU:** upload `submission/bill-back-demo.mp4` to YouTube as **Public** and paste the link.
+```
+https://youtu.be/NHoT_VOtxrQ
+```
 
 ## Code Repository Link
 ```

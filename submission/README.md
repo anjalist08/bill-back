@@ -12,6 +12,8 @@ Everything needed for the "November 14th UC Berkeley x Deepmind Hackathon" form.
 | [PITCH_SCRIPT.md](./PITCH_SCRIPT.md) | Script for the 2-minute video, with a first-person version to record yourself |
 | [DEMO_SCRIPT.md](./DEMO_SCRIPT.md) | Script for the 1-minute video |
 
+- Pitch video (2 min): https://youtu.be/c704E9NkUzs
+- Demo video (1 min): https://youtu.be/NHoT_VOtxrQ
 - Hosted prototype: https://billback-bs6g.onrender.com
 - Code repository: https://github.com/anjalist08/bill-back
 - Track: AI studio
