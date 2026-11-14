@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { LetterPanel } from "@/components/LetterPanel";
 import { Results } from "@/components/Results";
+import { ShareCard } from "@/components/ShareCard";
 import { Uploader } from "@/components/Uploader";
 import { SAMPLE_RESULT } from "@/lib/sample";
 import type { AnalyzeResult } from "@/lib/schemas";
@@ -53,6 +54,7 @@ export default function Home() {
           {state.isSample && <p className="muted">This is a fictional sample bill.</p>}
           <Results result={state.result} />
           <LetterPanel result={state.result} />
+          <ShareCard result={state.result} />
         </>
       )}
 
