@@ -1,6 +1,6 @@
 # BillBack: 2-minute pitch video script
 
-Target length: about 1:32. Video file: `bill-back-pitch.mp4` (built from this script; not committed).
+Target length: about 1:32. Video file: `submission/bill-back-pitch.mp4`.
 
 Two versions of the narration are below. The video ships with the **narrator version** (an AI voice, third person). To use your own voice, record the **first-person version** over the same video; the timing matches segment for segment.
 

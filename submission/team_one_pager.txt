@@ -1,0 +1,15 @@
+TEAM: BillBack (solo founder)
+
+Anjali Sharma-Tiwari, founder. EECS + Math student at Stanford University. Built all of BillBack: product, engineering, design and pitch.
+
+Background
+- Research Fellow, Texas Tech University ECE Lab: deep learning models on FMCW radar spectrograms for real-time classification. Published in IEEE WiSNet 2026.
+- Software Engineer, DynaRyde: built an on-demand microtransit routing engine (Python, DBSCAN spatial clustering, SUMO traffic simulation) that cut passenger wait times by up to 35%.
+- Robotics Engineer, VEX Robotics: fully autonomous tracking and localization stack on an NVIDIA Jetson Nano (sensor fusion, control loops, path planning).
+- MIT Beaver Works Summer Institute, Autonomous RACECAR: real-time OpenCV computer vision pipeline with closed-loop steering control.
+
+Why this team fits the problem
+My work has always been turning messy, noisy real-world input (radar returns, camera frames) into structured data a model can reason about, then into a decision a person can act on. A crumpled photo of a medical bill is the same kind of problem with much higher stakes for ordinary people.
+
+Why I am building this
+A medical bill is the only bill most people pay without understanding a single line. It arrives weeks after the care, lists codes nobody outside the industry can read, and its total is often wrong: duplicate charges, upcoded visits, unbundled supplies, denials that would be overturned on appeal. Hospitals and insurers have billing departments and software. The patient has a phone and a deadline. Multimodal models like Gemini can now read that bill like a billing specialist. As a solo builder I shipped the whole product in a day: upload, extraction, analysis, deterministic math checks, appeal letters and a live deployment.

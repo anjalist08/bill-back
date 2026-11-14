@@ -1,0 +1,22 @@
+BillBack: find the errors in your medical bill in about 60 seconds.
+
+PROBLEM
+Medical bills and insurance denials are opaque and frequently wrong: duplicate charges, upcoded visits, unbundled supplies, math errors, and denials that would be overturned on appeal. Most people never check, because the bill is unreadable and disputing it feels intimidating.
+
+SOLUTION
+Upload a photo or PDF of a bill, EOB or denial letter. Gemini reads the document (multimodal) and extracts every line item as structured JSON. BillBack then flags potential issues, each with a plain-English explanation, the line items involved, an estimated dollar amount, a confidence score and what to ask for. Arithmetic (printed total vs. line items) is checked deterministically in code, and amounts are capped to the referenced line items, so the headline number is never invented. One click drafts a polite, specific dispute letter, or an appeal to the insurer for denials. A shareable savings card shows only the numbers, never the document.
+
+EXAMPLE (fictional ER bill)
+$3,867 billed. BillBack found the same chest X-ray billed twice ($320) and a printed total $300 higher than the line items: $620 in potential errors, plus a ready-to-send letter.
+
+BUILT WITH GOOGLE
+Gemini API via Google AI Studio and the @google/genai SDK: multimodal document understanding, structured JSON output with schema validation and retry, and text generation for letters. Uses the latest Gemini Flash models, with automatic retry and model fallback. Next.js app, hosted on Render (free tier).
+
+BUSINESS MODEL
+Free analysis. Success fee (a percentage of money recovered) or a per-letter fee, so BillBack wins only when patients win. Channels: employer benefits platforms, patient advocates, insurers' member apps.
+
+WHY IT IS FUNDABLE
+Large, painful, recurring problem; a clear value metric ("$ found"); a natural viral loop (the savings card); and defensible data over time on provider- and code-level error patterns.
+
+HONEST LIMITS
+Results are potential issues to verify, not legal or medical advice. Nothing is stored: documents are processed in memory.
