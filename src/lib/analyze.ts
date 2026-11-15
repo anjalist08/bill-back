@@ -68,6 +68,16 @@ export function postProcess(extraction: Extraction, analysis: Analysis): Analysi
 
   // Printed total vs. sum of line items: pure arithmetic, so never left to the model.
   const diff = round2(extraction.totalBilled - sumItems(extraction));
+  // The model sometimes reports the mismatch itself despite the prompt; drop those so the
+  // amount is not counted twice next to the deterministic issue below.
+  const TOTAL_TOPIC = /\b(total|sum|math|arithmetic|mismatch|discrepanc\w*|add(s|ed)? up)\b/i;
+  for (let k = issues.length - 1; k >= 0; k--) {
+    const i = issues[k];
+    const coversWholeBill = i.lineItemRefs.length === 0 || i.lineItemRefs.length === n;
+    const aboutTotal = TOTAL_TOPIC.test(i.title) && coversWholeBill;
+    const sameAmount = Math.abs(diff) >= 0.01 && i.lineItemRefs.length === 0 && Math.abs(i.estimatedSavings - Math.abs(diff)) < 1;
+    if (aboutTotal || sameAmount) issues.splice(k, 1);
+  }
   if (n > 0 && Math.abs(diff) >= 0.01) {
     const over = diff > 0;
     issues.push({
