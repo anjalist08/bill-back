@@ -132,6 +132,7 @@ src/
     api/analyze/route.ts  # extract + analyze a document
     api/letter/route.ts   # draft a dispute or appeal letter
     api/health/route.ts   # deployment self-check
+  components/             # uploader, results and letter UI pieces
   lib/
     gemini.ts             # Gemini client, JSON calls, retry and model fallback
     extract.ts            # multimodal extraction prompt
